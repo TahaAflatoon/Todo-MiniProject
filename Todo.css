@@ -1,0 +1,93 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: name;
+    src: url('');
+}
+
+/* CSS */
+body {
+    background-color: #352f5b;
+    color: white;
+}
+/* Title */
+.todo-title {
+    padding: 1.5rem 0;
+}
+/* Search & Add inputs */
+.search-input, .add-input {
+    width: 50%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    -moz-border-radius: 7.5px;
+    -ms-border-radius: 7.5px;
+    -o-border-radius: 7.5px;
+    outline: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+.add-input {
+    display: block;
+    margin: 0 auto;
+}
+/* Inputs focus */
+.search-input:focus, .add-input:focus {
+    box-shadow: 0 0 5px aqua;
+}
+/* Todos list */
+.todo-list {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+/* Todo items */
+.todo-item {
+    width: 50%;
+    padding: 0.5rem 1rem;
+    border: 1px solid gray;
+    border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    -moz-border-radius: 7.5px;
+    -ms-border-radius: 7.5px;
+    -o-border-radius: 7.5px;
+    text-align: left;
+    position: relative;
+    margin: 0.25rem 0;
+    background-color: #423a6f;
+}
+/* Delete button */
+.delete {
+    position: absolute;
+    right: 1rem;
+    padding: 0.25rem 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.delete:hover {
+    cursor: pointer;
+    color: gray;
+}
+.addingTodo-title {
+    font-size: 20pt;
+}
+/* List filter class */
+.filtered {
+    display: none !important;
+}
